@@ -1,0 +1,1 @@
+Market Basket recommendation model generated using real historical data from Unwired Shop in Toronto. This model helped get insights into what items are frequently bought together. The owner used it to successfully upsell items to customers.
