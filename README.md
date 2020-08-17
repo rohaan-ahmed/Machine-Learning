@@ -1,2 +1,2 @@
 # machine_learning
-This folder contains ML-related Stuff
+Master repo of all Machine Learning and Data Science Projects
