@@ -1,2 +1,2 @@
-# Primary-Repository
-Prime repo of all Machine Learning, Data Science, and Software Development Projects.
+# Master-Repository
+Master repo of all Machine Learning, Data Science, Software Development Projects, Papers, Publications, etc.
