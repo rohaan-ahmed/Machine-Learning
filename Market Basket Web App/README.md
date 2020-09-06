@@ -14,3 +14,5 @@ Market_Basket_Web_App.ipynb - Google Colab notebook for Development
 rohaan_code2.py - The main file for the Google Colab notebook
 
 The Web App was generated using Streamlit.
+
+License: Free to use, reuse, copy, break, print, plaster on your wall, or tattoo. 
