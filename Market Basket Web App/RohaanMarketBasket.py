@@ -8,6 +8,7 @@ import json
 import pickle
 import uuid
 import re
+from PIL import Image
 
 def download_button(object_to_download, download_filename, button_text, pickle_it=False):
     """
@@ -93,6 +94,9 @@ def download_button(object_to_download, download_filename, button_text, pickle_i
     return dl_link
 
 st.title('Generating a Market Basket Recommendation System ## ')
+
+# image = Image.open('shopping_cart_clipart.png')
+st.image('https://raw.githubusercontent.com/rohaan-ahmed/Master-Repository/master/Market%20Basket%20Web%20App/shopping_cart_clipart.png', caption='Source: https://consumerist.com/2014/02/07/do-super-sized-shopping-carts-equal-super-sized-bills/', width=None)
 
 st.subheader('This page uses the \"Association Rule Algorithm\" to find the Items Most Commonly Bought Together\n')
 st.text('This is calculated based on the information provided in the Raw Historical Data file')
