@@ -1,0 +1,180 @@
+#:kivy 1.0.9
+# ref: https://kivy.org/docs/tutorials/pong.html
+
+<Car>:
+    size: 20, 10
+    canvas:
+        PushMatrix
+        Color:
+            rgba: 0,0,1,1
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        PopMatrix
+   
+<Ball1>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,0,0,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+<Ball2>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 0,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Ball3>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,1,0,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+            
+<Car2>:
+    size: 20, 10
+    canvas:
+        PushMatrix
+        Color:
+            rgba: 1,0,0,1
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        PopMatrix
+
+<Ball21>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,0,0,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+<Ball22>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 0,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Ball23>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,1,0,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+          
+<Car3>:
+    size: 20, 10
+    canvas:
+        PushMatrix
+        Color:
+            rgba: 0,1,0,1
+        Rotate:
+            angle: self.angle
+            origin: self.center
+        Rectangle:
+            pos: self.pos
+            size: self.size
+        PopMatrix
+
+<Ball31>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,0,0,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+<Ball32>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 0,1,1,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+
+<Ball33>:
+    size: 10,10
+    canvas:
+        Color:
+            rgba: 1,1,0,1
+        Ellipse:
+            pos: self.pos
+            size: self.size
+              
+<Game>:   
+    
+    car: game_car
+    ball1: game_ball1
+    ball2: game_ball2
+    ball3: game_ball3
+    car2: game_car2
+    ball21: game_ball21
+    ball22: game_ball22
+    ball23: game_ball23
+    car3: game_car3
+    ball31: game_ball31
+    ball32: game_ball32
+    ball33: game_ball33
+    display_text: display_text
+    
+    Car:
+        id: game_car
+        center: self.parent.center
+    Ball1:
+        id: game_ball1
+        center: self.parent.center
+    Ball2:
+        id: game_ball2
+        center: self.parent.center
+    Ball3:
+        id: game_ball3
+        center: self.parent.center
+    Car2:
+        id: game_car2
+        center: self.parent.center
+    Ball21:
+        id: game_ball21
+        center: self.parent.center
+    Ball22:
+        id: game_ball22
+        center: self.parent.center
+    Ball23:
+        id: game_ball23
+        center: self.parent.center
+    Car3:
+        id: game_car3
+        center: self.parent.center
+    Ball31:
+        id: game_ball31
+        center: self.parent.center
+    Ball32:
+        id: game_ball32
+        center: self.parent.center
+    Ball33:
+        id: game_ball33
+        center: self.parent.center
+    FloatLayout:
+        Label:
+            id: display_text
+            text: 'TEXT'
+            pos_hint: {'x': 1, 'y': 2}
