@@ -1,0 +1,9 @@
+gym
+atari-py
+matplotlib
+numpy
+scipy
+pytorch
+torchvision
+torchaudio
+tensorboard
